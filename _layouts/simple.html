@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    {% if page.header_nav %}
+    {% include header-nav.html %}
+    {% endif %}
+    <main id="content" class="main-content content-wrapper" role="main">
+      {{ content }}
+    </main>
+    {% if page.footer %}
+    {% include footer.html %}
+    {% endif %}
+  </body>
+
+</html>

@@ -1,0 +1,61 @@
+// Font, size, and weight
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html {
+    font: 17px "Nunito", sans-serif;
+    line-height: 22px;
+    //letter-spacing: 0.25px;
+}
+
+h1, h2, h3, h4, h5, h6, .button, .page-nav-header {
+    font-family: "Nunito", sans-serif;
+}
+
+code, pre {
+    font: 0.85em Consolas, Monaco, "Lucida Console", "Liberation Mono", "Courier New", monospace;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+small, .small {
+  font-size: 0.9em;
+}
