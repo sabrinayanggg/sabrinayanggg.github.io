@@ -1,24 +1,24 @@
 @mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
+    @media screen and (min-width: #{$large-breakpoint}) {
+        @content;
+    }
 }
 
 @mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
+    @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+        @content;
+    }
 }
 
 @mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
-    @content;
-  }
+    @media screen and (max-width: #{$medium-breakpoint}) {
+        @content;
+    }
 }
 
 @mixin transition {
-  -webkit-transition: all 200ms ease 50ms;
-  -moz-transition: all 200ms ease 50ms;
-  -o-transition: all 200ms ease 50ms;
-  transition: all 200ms ease 50ms;
+    -webkit-transition: all 200ms ease 50ms;
+    -moz-transition: all 200ms ease 50ms;
+    -o-transition: all 200ms ease 50ms;
+    transition: all 200ms ease 50ms;
 }

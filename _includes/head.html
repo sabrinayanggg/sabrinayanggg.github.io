@@ -2,10 +2,10 @@
 {% if site.google_analytics %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', '{{ site.google_analytics }}');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
 </script>
 {% endif %}
 <meta charset="UTF-8">
@@ -15,3 +15,29 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
 <script src="https://kit.fontawesome.com/bcbecd879f.js" crossorigin="anonymous"></script>
+<script>
+    (function () {
+        function ready(fn) {
+            if (document.readyState !== "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+        }
+
+        ready(function () {
+            var popover = document.querySelector("#homepage-image-popover");
+            var popoverImg = document.querySelector("#homepage-image-popover > img");
+            if (!popover || !popoverImg) return;
+
+            document.querySelectorAll(".homepage-card img").forEach(function (img) {
+                img.addEventListener("click", function (e) {
+                    popoverImg.src = img.src;
+                    popover.style.display = "flex";
+                });
+            });
+
+            popover.addEventListener("click", function () {
+                popover.style.display = "none";
+                popoverImg.src = "";
+            });
+        });
+    })();
+</script>
