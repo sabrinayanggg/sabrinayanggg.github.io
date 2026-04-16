@@ -624,19 +624,8 @@ ul.nav-links {
     .homepage-card-column-layout {
         display: flex;
         flex-direction: row;
-        align-items: center;
-
-        @include large {
-            flex-direction: row;
-        }
-
-        @include medium {
-            flex-direction: row;
-        }
-
-        @include small {
-            flex-direction: column;
-        }
+        flex-wrap: wrap;
+        align-items: start;
 
         .homepage-card-image-side-40 {
             flex: 1;
@@ -644,8 +633,8 @@ ul.nav-links {
             max-width: 40%;
 
             @include small {
-                flex-basis: 100%;
-                max-width: 100%;
+              flex-basis: 100%;
+              max-width: 100%;
             }
         }
 
